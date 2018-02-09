@@ -4,8 +4,8 @@ require_relative 'git'
 class Main
   include Git
 
-  def menu
-    puts 'Main Menu'.colorize(:black)
+  def self.menu
+    puts 'Main Menu'.colorize(:cyan) #hahahah
     puts '1: Enter git command'.colorize(:cyan)
     puts '2: Exit'.colorize(:cyan)
     choice = gets.to_i
